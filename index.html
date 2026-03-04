@@ -539,8 +539,6 @@
                             penalidades: document.getElementById('penalidades').value, posicaoPiloto, posicaoRobo, 
                             coleta, avaliador: document.getElementById('avaliador').value, defesa: document.querySelector('input[name="defesa"]:checked').value, }; 
         fetch("https://script.google.com/macros/s/AKfycbwz0qVSQstRtlf19jySvWQYjb_ePSF5H6KRlYxodCqPf4M2esnvS5gZvt_yO1oSAe4-/exec", { // Cole a URL do Web App do Google Apps Script method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(dadosCompeticao) }) .then(() => console.log("Dados enviados com sucesso!")) .catch(error => console.error("Erro ao enviar:", error));
-
-        https://script.google.com/macros/s/AKfycbwz0qVSQstRtlf19jySvWQYjb_ePSF5H6KRlYxodCqPf4M2esnvS5gZvt_yO1oSAe4-/exec
     // Limpar o formulário
     document.getElementById('competitionForm').reset();
     pontosAutonomo = 0;
@@ -569,3 +567,4 @@
 
 
     </body></html>
+
