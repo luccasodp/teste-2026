@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://canintech9602.com.br/html/formulario.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Dados da Competição_files/formulario.css">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados da Competição</title>
+    <link rel="icon" href="Dados da Competição_files/vertical-4c (1).png"type="image/x-icon">
+
+</head>
+<body>
+    <img src="./Dados da Competição_files/4.png" alt="Imagem">
+
+    <div class="form-container">
+        <h1>Dados da Competição</h1>
+        <form id="competitionForm" method="post">
+            <!-- Temporada -->
+            <div class="form-group">
+                <h2>Qual é a aliança?</h2>
+                <label>
+                    <input type="radio" id="alianceBlue" name="aliance" value="Azul" required=""> Azul
+                </label>
+                <label>
+                    <input type="radio" id="alianceRed" name="aliance" value="Vermelho" required=""> Vermelho
+                </label>
+            </div>
+
+            <!-- Número da equipe -->
+            <div class="form-group">
+                <label for="numero-equipe">Número da equipe:</label>
+
+                <select id="numero-equipe" name="numero-equipe"required="" >
+                    <option value="">Selecione um valor</option>
+                
+                    <option value="1156">1156</option>
+                    <option value="1772">1772</option>
+                    <option value="1860">1860</option>
+                    <option value="5800">5800</option>
+                    <option value="6404">6404</option>
+                    <option value="7033">7033</option>
+                    <option value="7459">7459</option>
+                    <option value="7563">7563</option>
+                    <option value="7565">7565</option>
+                    <option value="7567">7567</option>
+                    <option value="8066">8066</option>
+                    <option value="8276">8276</option>
+                    <option value="8882">8882</option>
+                    <option value="9045">9045</option>
+                    <option value="9046">9046</option>
+                    <option value="9047">9047</option>
+                    <option value="9048">9048</option>
+                    <option value="9049">9049</option>
+                    <option value="9050">9050</option>
+                    <option value="9066">9066</option>
+                    <option value="9085">9085</option>
+                    <option value="9110">9110</option>
+                    <option value="9162">9162</option>
+                    <option value="9163">9163</option>
+                    <option value="9164">9164</option>
+                    <option value="9166">9166</option>
+                    <option value="9169">9169</option>
+                    <option value="9175">9175</option>
+                    <option value="9178">9178</option>
+                    <option value="9195">9195</option>
+                    <option value="9199">9199</option>
+                    <option value="9200">9200</option>
+                    <option value="9218">9218</option>
+                    <option value="9219">9219</option>
+                    <option value="9302">9302</option>
+                    <option value="9305">9305</option>
+                    <option value="9458">9458</option>
+                    <option value="9459">9459</option>
+                    <option value="9460">9460</option>
+                    <option value="9461">9461</option>
+                    <option value="9484">9484</option>
+                    <option value="9485">9485</option>
+                    <option value="9486">9486</option>
+                    <option value="9487">9487</option>
+                    <option value="9603">9603</option>
+                    <option value="9604">9604</option>
+                    <option value="9611">9611</option>
+                    <option value="9614">9614</option>
+                    <option value="9617">9617</option>
+                    <option value="9657">9657</option>
+                    <option value="9675">9675</option>
+                    <option value="10019">10019</option>
+                    <option value="10140">10140</option>
+                    <option value="10190">10190</option>
+                    <option value="10200">10200</option>
+                    <option value="10343">10343</option>
+                    <option value="10345">10345</option>
+                    <option value="10356">10356</option>
+                    <option value="10466">10466</option>
+
+        
+                  </select>
+            </div>
+
+            <!-- Qualificatória -->
+            <div class="form-group">
+                <label for="qualificatoria">Qual a qualificatória?</label>
+                <input type="text" id="qualificatoria" name="qualificatoria" required="" >
+            </div>
+
+            <div class="form-group">
+                <div>O robô é de defesa?</div>
+                <label>
+                    <input type="radio" id="defesa" name="defesa" value=0 required=""> Não    
+                </label>
+                <label>
+                    <input type="radio" id="defesa" name="defesa" value=1 required=""> Sim
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>Posição do piloto:<label>
+                <div class="button_posi">
+                        <label for="Esquerda_Piloto">
+                            <button class="posi" id="Esquerda_Piloto"></button>
+                            Esquerda
+                        </label>
+                        <label for="Meio_Piloto">
+                            <button class="posi" id="Meio_Piloto"></button>
+                            Meio
+                        </label>
+                        <label for="Direita_Piloto">
+                            <button class="posi" id="Direita_Piloto"></button>
+                            Direita
+                        </label>
+                
+            </div>
+            </div>
+
+            <!-- Pontos de autônomo -->
+            <div class="form-group">
+                <div>Posição robô:</div>
+                <div class="button_robo">
+                    
+                    <label for="Esquerda_Robo">
+                        <button class="robo" id="Esquerda_Robo"></button>
+                        Esquerda
+                    </label>
+                    
+                    <label for="Meio_Robo">
+                        <button class="robo" id="Meio_Robo"></button>
+                        Meio
+                    </label>
+                    <label for="Direita_Robo">
+                        <button class="robo" id="Direita_Robo"></button>
+                        Direita
+                    </label> 
+                </div>
+            </div>
+            <div class="form-group">
+                <h2>Pontos de autônomo:</h2>
+
+<label>L4 
+    <span class="score" id="L4-scoreA">0</span> 
+    <button class="point-auto" id="L4-autoDecrement">-</button>
+    <button class="point-auto" id="L4-autoIncrement">+</button>
+</label>
+
+<label>L3 
+    <span class="score" id="L3-scoreA">0</span> 
+    <button class="point-auto" id="L3-autoDecrement">-</button>
+    <button class="point-auto" id="L3-autoIncrement">+</button>
+</label>
+
+<label>L2 
+    <span class="score" id="L2-scoreA">0</span> 
+    <button class="point-auto" id="L2-autoDecrement">-</button>
+    <button class="point-auto" id="L2-autoIncrement">+</button>
+</label>
+
+<label>L1 
+    <span class="score" id="L1-scoreA">0</span> 
+    <button class="point-auto" id="L1-autoDecrement">-</button>
+    <button class="point-auto" id="L1-autoIncrement">+</button>
+</label>   
+
+<label>Rede 
+    <span class="score" id="rede-scoreA">0</span> 
+    <button class="point-auto" id="redeAutoDecrement">-</button>
+    <button class="point-auto" id="redeAutoIncrement">+</button>
+</label>
+
+<label>Processador 
+    <span class="score" id="processador-scoreA">0</span> 
+    <button class="point-auto" id="processadorAutoDecrement">-</button>
+    <button class="point-auto" id="processadorAutoIncrement">+</button>
+</label>
+
+</div>
+
+<!-- Pontos de teleoperado -->
+<div class="form-group">
+    <h2>Pontos de teleoperado:</h2>
+
+    <label>L4 
+        <span class="score" id="L4-scoreT">0</span> 
+        <button class="point-tele" id="L4-teleDecrement">-</button>
+        <button class="point-tele" id="L4-teleIncrement">+</button>
+    </label>
+
+    <label>L3 
+        <span class="score" id="L3-scoreT">0</span> 
+        <button class="point-tele" id="L3-teleDecrement">-</button>
+        <button class="point-tele" id="L3-teleIncrement">+</button>
+    </label>
+
+    <label>L2 
+        <span class="score" id="L2-scoreT">0</span> 
+        <button class="point-tele" id="L2-teleDecrement">-</button>
+        <button class="point-tele" id="L2-teleIncrement">+</button>
+    </label>
+
+    <label>L1 
+        <span class="score" id="L1-scoreT">0</span> 
+        <button class="point-tele" id="L1-teleDecrement">-</button>
+        <button class="point-tele" id="L1-teleIncrement">+</button>
+    </label>   
+
+    <label>Rede 
+        <span class="score" id="rede-scoreT">0</span> 
+        <button class="point-tele" id="redeTeleopDecrement">-</button>
+        <button class="point-tele" id="redeTeleopIncrement">+</button>
+    </label>
+
+    <label>Processador 
+        <span class="score" id="processador-scoreT">0</span> 
+        <button class="point-tele" id="processadorTeleopDecrement">-</button>
+        <button class="point-tele" id="processadorTeleopIncrement">+</button>
+    </label>
+
+            <!--forma de coleta-->
+
+            <!-- barge -->
+            <div class="form-group">
+                <h2>Barge:</h2>
+                <label><input type="radio" id="nenhum" name="barge" value="none" required="">Nenhum</label>
+                <label><input type="radio" id="estacinar" name="barge" value="Parked" required=""> Estacionar</label>
+                <label><input type="radio" id="rasa" name="barge" value="ShallowCage" required=""> Rasa</label>
+                <label><input type="radio" id="profunda" name="barge" value="DeepCage" required=""> Profunda</label>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Informações de coleta:</legend>
+                
+                    <div class="check" >
+                        <input type="checkbox" id="AlgaReef" name="Coleta" value="AlgaReef" />
+                        <label for="AlgaReef">Alga - Reef</label>
+                    </div>
+
+                    <div class="check">
+                        <input style="display: inline;" type="checkbox" id="AlgaChao" name="Coleta" value="AlgaChao" />
+                        <label for="AlgaChao">Alga - Chão</label>
+                    </div>
+                    
+                    <div class="check">
+                        <input type="checkbox" id="CoralStage" name="Coleta" value="CoralStage"/>
+                        <label for="CoralStation">Coral - Station</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="CoralChao" name="Coleta" value="CoralChao"/>
+                        <label for="CoralChao">Coral -Chão</label>
+                    </div>
+                    
+                </fieldset>
+            </div>
+
+
+            <!-- Penalidades e observações -->
+            <div class="form-group">
+                <label for="penalidades"><h2>Observações:</h2></label>
+                <textarea id="penalidades" name="penalidades" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="avaliador">Quem preencheu o formulário:</label>
+                <input type="text" id="avaliador" name="avaliador" required="" >
+            </div>
+
+            <!-- Botão de envio -->
+            <div class="form-submit">
+                <button type="submit">Enviar</button>
+            </div>            
+
+        </form>
+    </div>
+
+    <script>
+
+
+
+
+    // Inicia as variaveis definindo elas 
+    let defesa = 0;
+    let pontosAutonomo = 0;
+    let pontosTeleoperado = 0;
+    let pontosBarge = 0;
+    let coleta = [];
+    let saida = false;
+    let l1_auto = 0;
+    let l2_auto = 0;
+    let l3_auto = 0;
+    let l4_auto = 0;
+    let rede_auto = 0;
+    let process_auto = 0;
+    let l1_tele = 0;
+    let l2_tele = 0;
+    let l3_tele = 0;
+    let l4_tele = 0;
+    let rede_tele = 0;
+    let process_tele = 0;
+    let posicaoPiloto = "";
+    let posicaoRobo = "";
+    let avaliador = "";
+
+    // Função para atualizar os pontos totais !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    function atualizarPontos() {
+        const totalPontos = pontosAutonomo + pontosTeleoperado + pontosBarge;
+        document.getElementById('total-pontos').textContent = `Total de Pontos: ${totalPontos}`;
+        return totalPontos; // Retorna o total para uso no histórico
+    }
+
+
+
+    // LOGICA PARA BOTÂO
+                // Lógica para selecionar a posição do piloto
+                document.querySelectorAll('.posi').forEach((button) => {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        posicaoPiloto = this.id;
+                    });
+                });
+
+                // Lógica para selecionar a posição do robô
+                document.querySelectorAll('.robo').forEach((button) => {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        posicaoRobo = this.id;
+                    });
+                });
+
+
+
+    //INCREMENTO AUTO
+    document.querySelectorAll('.point-auto').forEach((button) => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            switch (this.id) {
+                case 'L1-autoIncrement': 
+                    pontosAutonomo += 3; 
+                    l1_auto++; 
+                    document.getElementById("L1-scoreA").textContent = String(l1_auto);
+                    break;
+                case 'L2-autoIncrement': 
+                    pontosAutonomo += 4; 
+                    l2_auto++; 
+                    document.getElementById("L2-scoreA").textContent = String(l2_auto);
+                    break;
+                case 'L3-autoIncrement': 
+                    pontosAutonomo += 6; 
+                    l3_auto++; 
+                    document.getElementById("L3-scoreA").textContent = String(l3_auto);
+                    break;
+                case 'L4-autoIncrement': 
+                    pontosAutonomo += 7; 
+                    l4_auto++; 
+                    document.getElementById("L4-scoreA").textContent = String(l4_auto);
+                    break;
+                case 'redeAutoIncrement': 
+                    pontosAutonomo += 4; 
+                    rede_auto++; 
+                    document.getElementById("rede-scoreA").textContent = String(rede_auto);
+                    break;
+                case 'processadorAutoIncrement': 
+                    pontosAutonomo += 6; 
+                    process_auto++;
+                    document.getElementById("processador-scoreA").textContent = String(process_auto);
+                    break;
+
+
+                case 'L1-autoDecrement': 
+                    pontosAutonomo -= 3; 
+                    l1_auto--; 
+                    document.getElementById("L1-scoreA").textContent = String(l1_auto);
+                    break;
+                case 'L2-autoDecrement': 
+                    pontosAutonomo -= 4; 
+                    l2_auto--; 
+                    document.getElementById("L2-scoreA").textContent = String(l2_auto);
+                    break;
+                case 'L3-autoDecrement': 
+                    pontosAutonomo -= 6; 
+                    l3_auto--; 
+                    document.getElementById("L3-scoreA").textContent = String(l3_auto);
+                    break;
+                case 'L4-autoDecrement': 
+                    pontosAutonomo -= 7; 
+                    l4_auto--; 
+                    document.getElementById("L4-scoreA").textContent = String(l4_auto);
+                    break;
+                case 'redeAutoDecrement': 
+                    pontosAutonomo -= 4; 
+                    rede_auto--; 
+                    document.getElementById("rede-scoreA").textContent = String(rede_auto);
+                    break;
+                case 'processadorAutoDecrement': 
+                    pontosAutonomo -= 6; 
+                    process_auto--;
+                    document.getElementById("processador-scoreA").textContent = String(process_auto);
+                    break
+            }
+            if (pontosAutonomo > 0 && !saida) {
+                pontosAutonomo += 3;
+                saida = true;
+            }
+            atualizarPontos();
+        });
+    });
+
+    // Lógica para os botões de pontos de teleoperado
+    document.querySelectorAll('.point-tele').forEach((button) => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            switch (this.id) {
+                case 'L1-teleIncrement': 
+                    pontosTeleoperado += 2; 
+                    l1_tele++; 
+                    document.getElementById("L1-scoreT").textContent = String(l1_tele);
+                    break;
+                case 'L2-teleIncrement': 
+                    pontosTeleoperado += 3; 
+                    l2_tele++; 
+                    document.getElementById("L2-scoreT").textContent = String(l2_tele);
+                    break;
+                case 'L3-teleIncrement': 
+                    pontosTeleoperado += 4; 
+                    l3_tele++; 
+                    document.getElementById("L3-scoreT").textContent = String(l3_tele);
+                    break;
+                case 'L4-teleIncrement': 
+                    pontosTeleoperado += 5; 
+                    l4_tele++; 
+                    document.getElementById("L4-scoreT").textContent = String(l4_tele);
+                    break;
+                case 'redeTeleopIncrement': 
+                    pontosTeleoperado += 4; 
+                    rede_tele++; 
+                    document.getElementById("rede-scoreT").textContent = String(rede_tele);
+                    break;
+                case 'processadorTeleopIncrement': 
+                    pontosTeleoperado+= 6; 
+                    process_tele++;
+                    document.getElementById("processador-scoreT").textContent = String(process_tele);
+                    break;
+
+
+
+                    case 'L1-teleDecrement': 
+                    pontosTeleoperado -= 2; 
+                    l1_tele--; 
+                    document.getElementById("L1-scoreT").textContent = String(l1_tele);
+                    break;
+                case 'L2-teleDecrement': 
+                    pontosTeleoperado -= 3; 
+                    l2_tele--; 
+                    document.getElementById("L2-scoreT").textContent = String(l2_tele);
+                    break;
+                case 'L3-teleDecrement': 
+                    pontosTeleoperado -= 4; 
+                    l3_tele--; 
+                    document.getElementById("L3-scoreT").textContent = String(l3_tele);
+                    break;
+                case 'L4-teleDecrement': 
+                    pontosTeleoperado -= 5; 
+                    l4_tele--; 
+                    document.getElementById("L4-scoreT").textContent = String(l4_tele);
+                    break;
+                case 'redeTeleopDecrement': 
+                    pontosTeleoperado -= 4; 
+                    rede_tele--; 
+                    document.getElementById("rede-scoreT").textContent = String(rede_tele);
+                    break;
+                case 'processadorTeleopDecrement': 
+                    pontosTeleoperado-= 6; 
+                    process_tele--;
+                    document.getElementById("processador-scoreT").textContent = String(process_tele);
+                    break;
+
+            }
+            atualizarPontos();
+        });
+    });
+
+    // Lógica para os botões de Barge
+    document.querySelectorAll('input[name="barge"]').forEach((radio) => {
+        radio.addEventListener('change', function () {
+            switch (this.value) {
+                case 'DeepCage': pontosBarge = 12; break;
+                case 'ShallowCage': pontosBarge = 6; break;
+                case 'Parked': pontosBarge = 2; break;
+                case 'None': pontosBarge = 0; break;
+            }
+            atualizarPontos();
+        });
+    });
+     
+    function coletarCheckboxes() {
+    // Cria um array vazio para armazenar os valores dos checkboxes marcados
+    let checkboxes = document.querySelectorAll('input[name="Coleta"]:checked');
+    // Itera sobre os checkboxes marcados e adiciona seus valores ao array "coleta"
+    checkboxes.forEach(function(checkbox) {
+        coleta.push(checkbox.value);
+    });
+    // Exibe o array "coleta" no console (ou você pode fazer outra coisa com ele)
+    console.log(coleta);
+    }
+
+
+
+    // Evento de envio do formulário
+    document.getElementById('competitionForm').addEventListener('submit', function (e) {
+        coletarCheckboxes();
+        e.preventDefault(); // Impede o envio padrão do formulário
+
+        // Calcula o total de pontos
+        const totalPontos = atualizarPontos();
+
+        // Pega os dados do formulário
+        var dadosCompeticao = {
+            aliance: document.querySelector('input[name="aliance"]:checked').value,
+            numeroEquipe: document.getElementById('numero-equipe').value,
+            qualificatoria: document.getElementById('qualificatoria').value,
+            l1_auto, l2_auto, l3_auto, l4_auto, rede_auto, process_auto,
+            l1_tele, l2_tele, l3_tele, l4_tele, rede_tele, process_tele,
+            pontosAutonomo, pontosTeleoperado, pontosBarge, totalPontos,
+            barge: document.querySelector('input[name="barge"]:checked').value,
+            penalidades: document.getElementById('penalidades').value,
+            posicaoPiloto,
+            posicaoRobo,
+            coleta,
+            avaliador: document.getElementById('avaliador').value,
+            defesa: document.querySelector('input[name="defesa"]:checked').value,
+        };
+
+        fetch("https://script.google.com/macros/s/AKfycbwSgIOUwGw1baI8SkC5otYclG6WLsbM_7bxq__N_U8hvT7Bac8b__-jzeHjH_oI2aLP/exec", {  // Cole a URL do Web App do Google Apps Script
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dadosCompeticao)
+    })
+    .then(() => console.log("Dados enviados com sucesso!"))
+    .catch(error => console.error("Erro ao enviar:", error));
+    
+
+    // Limpar o formulário
+    document.getElementById('competitionForm').reset();
+    pontosAutonomo = 0;
+    pontosTeleoperado = 0;
+    pontosBarge = 0;
+    l1_auto = l2_auto = l3_auto = l4_auto = rede_auto = process_auto = 0;
+        l1_tele = l2_tele = l3_tele = l4_tele = rede_tele = process_tele = 0;
+        posicaoPiloto = "";
+        posicaoRobo = "";
+        coleta = [];
+        avaliador = "";
+        atualizarPontos();
+    });
+
+
+    // Inicializa o total de pontos na tela
+    document.addEventListener('DOMContentLoaded', () => {
+        const totalDiv = document.createElement('div');
+        totalDiv.id = 'total-pontos';
+        totalDiv.textContent = 'Total de Pontos: 0';
+        document.body.appendChild(totalDiv);
+    });
+
+
+    </script>
+
+    </body></html>
