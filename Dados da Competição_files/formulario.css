@@ -1,0 +1,386 @@
+body {
+    font-family: 'Neuropolitical', serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+body img {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%; /* Garante que a imagem ocupe 100% da altura da tela */
+    top: 0; /* Remove qualquer deslocamento no topo */
+    left: 0; /* Remove qualquer deslocamento lateral */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+}
+
+select{
+    height: 40px;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:transparent;
+    backdrop-filter: blur(60px);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.form-group {
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+.button_posi,.button_robo{
+    display: flex;
+    flex-direction: row;
+    text-align:left;
+    text-justify: distribute;
+    gap: 50px;
+    padding: 10px;
+
+}
+
+.posi:active,.robo:active{
+    background-color: rgb(255, 174, 0);
+}
+
+.posi,.robo{
+    width: 50px;
+    height: 25px;
+    border:3px #333 double;
+    background-color: rgb(207, 120, 6);
+    cursor: pointer;
+    border-radius: 11px;
+}
+
+.score {
+    display: inline-block;
+    width: 100px; /* Define uma largura fixa para manter o alinhamento */
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000; /* Cor do texto */
+    background-color: #fff; /* Fundo branco para destaque */
+    border-radius: 10px;
+    margin: 0 10px; /* Espaço entre o texto e o botão */
+    border: 3px solid #202020; /* Borda para melhor visibilidade */
+}
+
+#PontosAutonomoLabel{
+    margin-top: 20px;
+}
+.point-tele,.point-auto{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    width: 40px;
+    height: 32px;
+    background-color: rgb(218, 116, 0);
+    cursor: pointer;
+    border:3px solid rgb(63, 41, 7);
+    border-radius: 20px;
+}
+
+.point-tele:active,.point-auto:active{
+    background-color: rgb(184, 110, 26);
+
+}
+
+#piloto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espaçamento entre os botões */
+    
+}
+
+.button_container label {
+    display: block; /* Faz com que o label ocupe toda a linha */
+    text-align: center; /* Centraliza o texto do label */
+    margin-top: 5px; /* Espaçamento entre o botão e o label */
+    
+}
+
+.posi_piloto {
+    display: block;
+    width: 65px;
+    height: 32px;
+    background-color: gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Ajuste para manter os botões lado a lado e as legendas abaixo */
+.button_container label {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 80%;  /* Reduz a largura dos inputs */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+.form-submit button {
+    width: 100%;  /* Faz o botão ocupar toda a largura da div */
+    padding: 10px 20px;
+    background: linear-gradient(65deg, rgb(15, 0, 153) 30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-submit button:hover {
+    background: linear-gradient(65deg,rgb(221, 255, 68) 30%, rgb(6, 177, 0) 50%,  rgb(15, 0, 153) 90%);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 24px;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+    list-style: none;
+}
+
+.navigation_link{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 55px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+
+}
+
+.navigation_link_G{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link_G::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 96px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link_G:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+
+}
+
+.navigation_link_S{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link_S::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 113px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link_S:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+
+}
+
+.navigation_link_O{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link_O::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 138px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link_O:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.navigation_link_A{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link_A::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 154px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link_A:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+
+}
+
+
+.navigation_link_T{
+    font-size: 12px;
+    font-weight: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.navigation_link_T::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    width: 178px;
+    height: 1px;
+    background: linear-gradient(65deg,  rgb(15, 0, 153)30%, rgb(6, 177, 0) 50%, rgb(221, 255, 68) 90%);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link_T:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+
+.label{
+    border-radius: 30%;
+    display: inline;
+    background-color: white ;
+    
+}
